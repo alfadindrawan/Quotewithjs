@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Quotes-css.css">
+    <style>
+        table{
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Quotes</h1>
+    <div class="gambar">
+        <img src="G:/CodePolitan/Gambar/0.png" alt="" id="pict">
+    </div>
+    <br>
+    <div id="caption">Eleanor</div>
+    
+    <table border="0">
+        <tr>
+            <td><a href="#"  onclick="sebelum()" class="tombol no-0">Previous</a></td>
+            <td><a href="#"  onclick="ubah(0)" class="button no-1">A</a></td>
+            <td><a href="#"  onclick="ubah(1)" class="button no-2">L</a></td>
+            <td><a href="#"  onclick="ubah(2)" class="button no-3">F</a></td>
+            <td><a href="#"  onclick="ubah(3)" class="button no-4">A</a></td>
+            <td><a href="#"  onclick="ubah(5)" class="button no-5" id="berubah">D</a></td>
+            <td><a href="#"  onclick="sesudah()" class="tombol no-6">Next</a></td>
+        </tr>
+        
+    </table>
+    <!-- <table>
+        <tr>
+            <td colspan="5"><a href="C:\Users\ASUS\Documents\HTML\Tugas.html" class="tombol no-7">About Me</a></td>
+        </tr>
+    </table> -->
+    <script>
+
+        var nomor = 0;
+        var caption = document.getElementById('caption');
+        var text = ['Eleanor','James Cameron','Maya','Walt Disney','Charles'];
+
+        function ubah(angka){
+            nomor = angka;
+            ganti_gambar(angka)
+        };
+
+        // var a = document.getElementById('berubah');
+
+        // function button(){
+        //     a.style.backgroundColor = "rgb(145, 94, 0)";
+        //     a.style.color = 'white';
+        // }
+        // function button2(){
+        //     a.style.backgroundColor = 'orange';
+        //     a.style.color = 'black';
+        // }
+        // a.addEventListener('mouseenter',button);
+        // a.addEventListener('mouseleave',button2);
+
+
+
+        function sebelum(){
+            nomor--;
+            if(nomor < 0) nomor = 5;
+            ganti_gambar(nomor)
+        };
+
+        function sesudah(){
+            nomor++;
+            if(nomor > 5) nomor = 0;
+            ganti_gambar(nomor)
+        };
+
+        function ganti_gambar(angka){
+            var lokasi = 'G:/CodePolitan/Gambar/' + angka + '.png';
+            document.getElementById('pict').src= lokasi;
+            caption.innerHTML = text[angka];
+            return false;
+        };
+
+    </script>
+    
+</body>
+</html>
