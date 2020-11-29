@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: DarkCyan;
+        }
+        .gambar{
+            width: 598px;
+            height: 300px;
+            margin: 20px auto;
+            position: relative;
+        }
+        .span{
+            position: absolute;
+            top: 110px;
+            left: 150px;
+            font-size: 2em;
+            color: white;
+        }
+        .text{
+            margin-left: 528px ;
+        }
+        h2{
+            text-align: center;
+            font-size: 1.5em;
+        }
+        #submit{
+            margin-left: 650px ;
+            margin-top: 5px;
+            padding: 5px;
+            font-size: 15px;
+            border-radius: 5px;
+            background-color: maroon;
+            color: white;
+        }
+        footer{
+            text-align: center;
+            font-size: 20px;
+            color: white;
+        }
+        h1{
+            margin: 15px 5px 10px ;
+            text-align: center;
+            font-variant: small-caps;
+            font-size: 3em;
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Quote</h1>
+    <div class="gambar">
+        <img src="G:\CodePolitan\Gambar\8.png" alt="">
+        <div class="span">
+            <span id="span"></span>
+        </div>
+    </div>
+
+    <h2>TAMBAH QUOTE</h2>
+    <div class="text">
+        <textarea name="quote" id="quotes" cols="40" rows="5"></textarea>
+    </div>
+        <input type="submit" value="Tambah" id="submit">
+           
+        
+        
+    
+
+    <script>
+        var a = document.getElementById('quotes');
+        var submit = document.getElementById('submit');
+
+        submit.onclick = function(){
+            var text = a.value;
+            span.innerHTML = text;
+        };
+    </script>
+    
+    <footer>
+        <p>Made By Alfad Indrawan</p>
+    </footer>
+    
+</body>
+</html>
