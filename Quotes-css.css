@@ -1,0 +1,115 @@
+body{
+    /* margin: 0; */
+    padding: 0;
+    background-color: aqua;
+}
+h1{
+    margin: 15px 5px 20px ;
+    text-align: center;
+    font-variant: small-caps;
+    font-size: 3em;
+    font-family: 'Times New Roman', Times, serif;
+}
+.gambar{
+    margin: 0 auto;
+    width: 598px;
+    height: 300px;
+}
+.button{
+   clear: both;
+   font-size: 1.5em;
+   text-decoration: none;
+   color: black;
+   display: inline-block;
+   margin-right: 10px;
+   margin-left: 5px;
+   margin-top: 20px;
+   width: 30px;
+   height: 30px;
+   text-align: center;
+   padding: 5px;
+   box-shadow: 7px 3px 3px 0 rgb(133, 132, 132);
+   font-weight: bold;
+}
+table{
+    margin: 0 auto;
+}
+.tombol{
+    clear: both;
+   font-size: 1.5em;
+   text-decoration: none;
+   display: inline-block;
+   color: black;
+   margin-top: 10px;
+   width: 150px;
+   height: 30px;
+   text-align: center;
+   padding: 5px;
+   box-shadow: 7px 7px 2px 0 rgb(133, 132, 132);
+   font-weight: bold;
+}
+#caption{
+    text-align: center;
+    font-size: 20px;
+    font-style: oblique;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.no-1{
+    background-color: rgb(255, 16, 16);
+    border-radius: 50%;
+}
+.no-1:hover{
+    background-color: maroon;
+    color: white;
+}
+.no-2{
+    background-color: rgb(40, 40, 255);
+    border-radius: 50%;
+}
+.no-2:hover{
+    background-color: navy;
+    color: white;
+}
+.no-3{
+    background-color: rgb(41, 255, 41);
+    border-radius: 50%;
+}
+.no-3:hover{
+    background-color: darkgreen;
+    color: white;
+}
+.no-4{
+    background-color: rgb(255, 35, 255);
+    border-radius: 50%;
+}
+.no-4:hover{
+    background-color: purple;
+    color: white;
+}
+.no-5{
+    background-color: orange;
+    border-radius: 50%;
+}
+.no-5:hover{
+    background-color: rgb(145, 94, 0);
+    color: white;
+}
+.no-0,
+.no-6{
+    background-color: Chocolate;
+    border-radius: 20px;
+}
+.no-0:hover,
+.no-6:hover{
+    background-color: rgb(158, 78, 21);
+    color: white;
+}
+/* .no-7{
+    background-color: BurlyWood;
+    border-radius: 10px;
+}
+.no-7:hover{
+    background-color: rgb(126, 100, 69);
+    color: white;
+}  */
